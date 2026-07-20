@@ -184,7 +184,7 @@ main{position:relative;z-index:2}
 
 /* ---------- HERO ---------- */
 .hero{
-  min-height:100vh;display:grid;grid-template-columns:1fr 1.02fr;align-items:center;gap:40px;
+  min-height:100vh;display:grid;grid-template-columns:0.85fr 1.15fr;align-items:center;gap:40px;
   padding:120px var(--pad-inline) 80px;position:relative;
 }
 .hero-copy{max-width:900px}
@@ -197,7 +197,7 @@ main{position:relative;z-index:2}
   font-size:.9rem;color:var(--ash);font-style:italic;font-family:var(--f-body);max-width:52ch;letter-spacing:0;
 }
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
-.hero-visual{position:relative;height:min(88vh,780px);display:flex;align-items:center;justify-content:center}
+.hero-visual{position:relative;height:min(90vh,900px);display:flex;align-items:center;justify-content:center}
 
 /* trust bar */
 .trustbar{
@@ -369,27 +369,27 @@ footer ul a:hover{color:var(--signal)}
   0%{transform:translateY(0);opacity:0}
   4%{opacity:1}
   10%{transform:translateY(0)}
-  13%{transform:translateY(98px)}
-  22%{transform:translateY(98px)}
-  25%{transform:translateY(196px)}
-  35%{transform:translateY(196px)}
-  38%{transform:translateY(294px)}
-  48%{transform:translateY(294px)}
-  51%{transform:translateY(392px)}
-  61%{transform:translateY(392px)}
-  64%{transform:translateY(490px)}
-  74%{transform:translateY(490px)}
-  77%{transform:translateY(588px)}
-  90%{transform:translateY(588px);opacity:1}
-  100%{transform:translateY(588px);opacity:0}
+  13%{transform:translateY(116px)}
+  22%{transform:translateY(116px)}
+  25%{transform:translateY(232px)}
+  35%{transform:translateY(232px)}
+  38%{transform:translateY(348px)}
+  48%{transform:translateY(348px)}
+  51%{transform:translateY(464px)}
+  61%{transform:translateY(464px)}
+  64%{transform:translateY(580px)}
+  74%{transform:translateY(580px)}
+  77%{transform:translateY(696px)}
+  90%{transform:translateY(696px);opacity:1}
+  100%{transform:translateY(696px);opacity:0}
 }
 .lnode{animation:lnpulse 3.2s ease-in-out infinite}
 @keyframes lnpulse{0%,100%{opacity:.55}50%{opacity:1}}
 @media (prefers-reduced-motion:reduce){
   .pkt{animation:none;opacity:.9}
-  .pkt.p1{transform:translateY(98px)}
-  .pkt.p2{transform:translateY(294px)}
-  .pkt.p3{transform:translateY(588px)}
+  .pkt.p1{transform:translateY(116px)}
+  .pkt.p2{transform:translateY(348px)}
+  .pkt.p3{transform:translateY(696px)}
   .lnode{animation:none;opacity:.85}
 }
 
@@ -487,117 +487,118 @@ footer ul a:hover{color:var(--signal)}
     </div>
   </div>
   <div class="hero-visual" data-parallax>
-    <svg id="stackviz" viewBox="0 0 540 760" fill="none" role="img" aria-label="The Eminence Grey stack: controlled data movement across private nodes">
-      <text x="14" y="12" font-family="'Aptos','Archivo',sans-serif" font-size="11" letter-spacing="2.6" fill="#5e5e78">THE SOVEREIGN STACK</text>
-      <line x1="458" y1="62" x2="458" y2="650" stroke="#2c2a3c" stroke-width="1"/>
-      <line x1="486" y1="62" x2="486" y2="650" stroke="#2c2a3c" stroke-width="1"/>
-      <line x1="514" y1="62" x2="514" y2="650" stroke="#2c2a3c" stroke-width="1"/>
+    <svg id="stackviz" viewBox="0 0 600 850" fill="none" role="img" aria-label="The Eminence Grey stack: controlled data movement across private nodes">
+      <text x="16" y="12" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="2.8" fill="#5e5e78">THE SOVEREIGN STACK</text>
+      <line x1="522" y1="64" x2="522" y2="760" stroke="#2c2a3c" stroke-width="1"/>
+      <line x1="548" y1="64" x2="548" y2="760" stroke="#2c2a3c" stroke-width="1"/>
+      <line x1="574" y1="64" x2="574" y2="760" stroke="#2c2a3c" stroke-width="1"/>
       <g>
-        <rect x="14" y="20" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="38" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="38" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">01</text>
-        <text x="40" y="60" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Facilities</text>
-        <text x="40" y="78" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Modular, regional AI infrastructure designed for speed,</text>
-        <text x="40" y="93" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">resilience, and control.</text>
-        <circle cx="458" cy="62" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.00s" cx="458" cy="62" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="62" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.28s" cx="486" cy="62" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="62" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.56s" cx="514" cy="62" r="3" fill="#9a9db4"/>
+        <rect x="16" y="16" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="38" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="38" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">01</text>
+        <text x="46" y="62" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Facilities</text>
+        <text x="46" y="84" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Modular, regional AI infrastructure designed for</text>
+        <text x="46" y="102" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">speed, resilience, and control.</text>
+        <circle cx="522" cy="64" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.00s" cx="522" cy="64" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="64" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.28s" cx="548" cy="64" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="64" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.56s" cx="574" cy="64" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="118" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="136" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="136" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">02</text>
-        <text x="40" y="158" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Power</text>
-        <text x="40" y="176" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Resilient power strategies built around available,</text>
-        <text x="40" y="191" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">reliable, and long-term operating advantage.</text>
-        <circle cx="458" cy="160" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.84s" cx="458" cy="160" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="160" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.12s" cx="486" cy="160" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="160" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.40s" cx="514" cy="160" r="3" fill="#9a9db4"/>
+        <rect x="16" y="132" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="154" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="154" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">02</text>
+        <text x="46" y="178" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Power</text>
+        <text x="46" y="200" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Resilient power strategies built around available,</text>
+        <text x="46" y="218" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">reliable, and long-term operating advantage.</text>
+        <circle cx="522" cy="180" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.84s" cx="522" cy="180" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="180" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.12s" cx="548" cy="180" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="180" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.40s" cx="574" cy="180" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="216" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="234" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="234" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">03</text>
-        <text x="40" y="256" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Network</text>
-        <text x="40" y="274" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Private AI fiber fabric for secure, high-bandwidth</text>
-        <text x="40" y="289" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">interconnection across sites.</text>
-        <circle cx="458" cy="258" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.68s" cx="458" cy="258" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="258" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.96s" cx="486" cy="258" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="258" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.24s" cx="514" cy="258" r="3" fill="#9a9db4"/>
+        <rect x="16" y="248" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="270" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="270" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">03</text>
+        <text x="46" y="294" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Network</text>
+        <text x="46" y="316" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Private AI fiber fabric for secure, high-bandwidth</text>
+        <text x="46" y="334" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">interconnection across sites.</text>
+        <circle cx="522" cy="296" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.68s" cx="522" cy="296" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="296" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.96s" cx="548" cy="296" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="296" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.24s" cx="574" cy="296" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="314" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="332" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="332" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">04</text>
-        <text x="40" y="354" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Compute</text>
-        <text x="40" y="372" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Enterprise-grade GPU, CPU, XPU, storage and networking</text>
-        <text x="40" y="387" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">infrastructure for inference, training, and mission-</text>
-        <text x="40" y="402" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">critical AI operations.</text>
-        <circle cx="458" cy="356" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.52s" cx="458" cy="356" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="356" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.80s" cx="486" cy="356" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="356" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.08s" cx="514" cy="356" r="3" fill="#9a9db4"/>
+        <rect x="16" y="364" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="386" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="386" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">04</text>
+        <text x="46" y="410" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Compute</text>
+        <text x="46" y="432" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Enterprise-grade GPU, CPU, XPU, storage and</text>
+        <text x="46" y="450" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">networking infrastructure for inference, training,</text>
+        <text x="46" y="468" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">and mission-critical AI operations.</text>
+        <circle cx="522" cy="412" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.52s" cx="522" cy="412" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="412" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.80s" cx="548" cy="412" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="412" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.08s" cx="574" cy="412" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="412" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="430" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="430" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">05</text>
-        <text x="40" y="452" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Control Plane</text>
-        <text x="40" y="470" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Whitehorse&#8482; &#8212; our proprietary sovereign control plane &#8212;</text>
-        <text x="40" y="485" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">orchestrates policy, isolation, governance, and visibility</text>
-        <text x="40" y="500" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">across the platform.</text>
-        <circle cx="458" cy="454" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.36s" cx="458" cy="454" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="454" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.64s" cx="486" cy="454" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="454" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.92s" cx="514" cy="454" r="3" fill="#9a9db4"/>
+        <rect x="16" y="480" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="502" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="502" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">05</text>
+        <text x="46" y="526" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Control Plane</text>
+        <text x="46" y="548" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Whitehorse&#8482; &#8212; our proprietary sovereign control</text>
+        <text x="46" y="566" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">plane &#8212; orchestrates policy, isolation, governance,</text>
+        <text x="46" y="584" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">and visibility across the platform.</text>
+        <circle cx="522" cy="528" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.36s" cx="522" cy="528" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="528" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.64s" cx="548" cy="528" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="528" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.92s" cx="574" cy="528" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="510" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="528" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="528" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">06</text>
-        <text x="40" y="550" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Security</text>
-        <text x="40" y="568" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Zero-trust, post-quantum, defense-in-depth architecture</text>
-        <text x="40" y="583" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">embedded throughout the platform.</text>
-        <circle cx="458" cy="552" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.20s" cx="458" cy="552" r="3" fill="#9a9db4"/>
-        <circle cx="486" cy="552" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.48s" cx="486" cy="552" r="3" fill="#9a9db4"/>
-        <circle cx="514" cy="552" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.76s" cx="514" cy="552" r="3" fill="#9a9db4"/>
+        <rect x="16" y="596" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="618" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="618" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">06</text>
+        <text x="46" y="642" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Security</text>
+        <text x="46" y="664" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Zero-trust, post-quantum, defense-in-depth</text>
+        <text x="46" y="682" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">architecture embedded throughout the platform.</text>
+        <circle cx="522" cy="644" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.20s" cx="522" cy="644" r="3" fill="#9a9db4"/>
+        <circle cx="548" cy="644" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.48s" cx="548" cy="644" r="3" fill="#9a9db4"/>
+        <circle cx="574" cy="644" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.76s" cx="574" cy="644" r="3" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="14" y="608" width="512" height="84" rx="13" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="18" y="626" width="3" height="30" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="40" y="626" font-family="'Aptos','Archivo',sans-serif" font-size="11.5" letter-spacing="1.6" fill="#5e5e78">07</text>
-        <text x="40" y="648" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="19" fill="#e9eaf3">Operations</text>
-        <text x="40" y="666" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">Facilities are operated by cleared, physical security</text>
-        <text x="40" y="681" font-family="'Aptos','Archivo',sans-serif" font-size="12" fill="#9a9db4">teams staffed by former U.S. military personnel.</text>
-        <line x1="458" y1="650" x2="514" y2="650" stroke="#7c88e6" stroke-opacity="0.35" stroke-width="1"/>
-        <circle cx="458" cy="650" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.04s" cx="458" cy="650" r="3" fill="#7c88e6"/>
-        <circle cx="486" cy="650" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.32s" cx="486" cy="650" r="3" fill="#7c88e6"/>
-        <circle cx="514" cy="650" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.60s" cx="514" cy="650" r="3" fill="#7c88e6"/>
+        <rect x="16" y="712" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="20" y="734" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="46" y="734" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">07</text>
+        <text x="46" y="758" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Operations</text>
+        <text x="46" y="780" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Facilities are operated by cleared, physical</text>
+        <text x="46" y="798" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">security teams staffed by former U.S. military</text>
+        <text x="46" y="816" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">personnel.</text>
+        <line x1="522" y1="760" x2="574" y2="760" stroke="#7c88e6" stroke-opacity="0.35" stroke-width="1"/>
+        <circle cx="522" cy="760" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.04s" cx="522" cy="760" r="3" fill="#7c88e6"/>
+        <circle cx="548" cy="760" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.32s" cx="548" cy="760" r="3" fill="#7c88e6"/>
+        <circle cx="574" cy="760" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.60s" cx="574" cy="760" r="3" fill="#7c88e6"/>
       </g>
-      <circle class="pkt p1" cx="458" cy="62" r="4.5" fill="#7c88e6" style="animation-delay:0.0s"/>
-      <circle class="pkt p2" cx="486" cy="62" r="4.5" fill="#7c88e6" style="animation-delay:2.33s"/>
-      <circle class="pkt p3" cx="514" cy="62" r="4.5" fill="#7c88e6" style="animation-delay:4.66s"/>
-      <circle class="pkt p2" cx="458" cy="62" r="4.5" fill="#7c88e6" style="animation-delay:3.5s"/>
-      <text x="270" y="734" text-anchor="middle" font-family="'Aptos','Archivo',sans-serif" font-size="12.5" letter-spacing="1.5" fill="#5e5e78">CONTROLLED FLOW  ·  PRIVATE NODES</text>
+      <circle class="pkt p1" cx="522" cy="64" r="5" fill="#7c88e6" style="animation-delay:0.0s"/>
+      <circle class="pkt p2" cx="548" cy="64" r="5" fill="#7c88e6" style="animation-delay:2.33s"/>
+      <circle class="pkt p3" cx="574" cy="64" r="5" fill="#7c88e6" style="animation-delay:4.66s"/>
+      <circle class="pkt p2" cx="522" cy="64" r="5" fill="#7c88e6" style="animation-delay:3.5s"/>
+      <text x="300" y="822" text-anchor="middle" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="1.6" fill="#5e5e78">CONTROLLED FLOW  ·  PRIVATE NODES</text>
     </svg>
   </div>
 </section>
