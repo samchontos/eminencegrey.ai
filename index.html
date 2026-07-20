@@ -369,27 +369,27 @@ footer ul a:hover{color:var(--signal)}
   0%{transform:translateY(0);opacity:0}
   4%{opacity:1}
   10%{transform:translateY(0)}
-  13%{transform:translateY(116px)}
-  22%{transform:translateY(116px)}
-  25%{transform:translateY(232px)}
-  35%{transform:translateY(232px)}
-  38%{transform:translateY(348px)}
-  48%{transform:translateY(348px)}
-  51%{transform:translateY(464px)}
-  61%{transform:translateY(464px)}
-  64%{transform:translateY(580px)}
-  74%{transform:translateY(580px)}
-  77%{transform:translateY(696px)}
-  90%{transform:translateY(696px);opacity:1}
-  100%{transform:translateY(696px);opacity:0}
+  13%{transform:translateY(117px)}
+  22%{transform:translateY(117px)}
+  25%{transform:translateY(234px)}
+  35%{transform:translateY(234px)}
+  38%{transform:translateY(351px)}
+  48%{transform:translateY(351px)}
+  51%{transform:translateY(468px)}
+  61%{transform:translateY(468px)}
+  64%{transform:translateY(585px)}
+  74%{transform:translateY(585px)}
+  77%{transform:translateY(702px)}
+  90%{transform:translateY(702px);opacity:1}
+  100%{transform:translateY(702px);opacity:0}
 }
 .lnode{animation:lnpulse 3.2s ease-in-out infinite}
 @keyframes lnpulse{0%,100%{opacity:.55}50%{opacity:1}}
 @media (prefers-reduced-motion:reduce){
   .pkt{animation:none;opacity:.9}
-  .pkt.p1{transform:translateY(116px)}
-  .pkt.p2{transform:translateY(348px)}
-  .pkt.p3{transform:translateY(696px)}
+  .pkt.p1{transform:translateY(117px)}
+  .pkt.p2{transform:translateY(351px)}
+  .pkt.p3{transform:translateY(702px)}
   .lnode{animation:none;opacity:.85}
 }
 
@@ -427,7 +427,8 @@ footer ul a:hover{color:var(--signal)}
     background:var(--graphite);border-top:1px solid var(--line);padding:20px var(--pad-inline);gap:18px}
   .menu-btn{display:inline-block}
   .hero{grid-template-columns:1fr;min-height:auto;padding-top:120px}
-  .hero-visual{height:340px;order:-1}
+  .hero-visual{height:auto;order:-1}
+  #stackviz{height:auto}
   .grid-2{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
   .wh-grid{grid-template-columns:1fr}
@@ -487,118 +488,115 @@ footer ul a:hover{color:var(--signal)}
     </div>
   </div>
   <div class="hero-visual" data-parallax>
-    <svg id="stackviz" viewBox="0 0 600 850" fill="none" role="img" aria-label="The Eminence Grey stack: controlled data movement across private nodes">
-      <text x="16" y="12" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="2.8" fill="#5e5e78">THE SOVEREIGN STACK</text>
-      <line x1="522" y1="64" x2="522" y2="760" stroke="#2c2a3c" stroke-width="1"/>
-      <line x1="548" y1="64" x2="548" y2="760" stroke="#2c2a3c" stroke-width="1"/>
-      <line x1="574" y1="64" x2="574" y2="760" stroke="#2c2a3c" stroke-width="1"/>
+    <svg id="stackviz" viewBox="0 0 880 900" preserveAspectRatio="xMaxYMid meet" fill="none" role="img" aria-label="The Eminence Grey stack: controlled data movement across private nodes">
+      <text x="8" y="24" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="3" fill="#5e5e78">EMINENCE STACK</text>
+      <line x1="766" y1="96" x2="766" y2="798" stroke="#2c2a3c" stroke-width="1"/>
+      <line x1="801" y1="96" x2="801" y2="798" stroke="#2c2a3c" stroke-width="1"/>
+      <line x1="836" y1="96" x2="836" y2="798" stroke="#2c2a3c" stroke-width="1"/>
       <g>
-        <rect x="16" y="16" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="38" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="38" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">01</text>
-        <text x="46" y="62" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Facilities</text>
-        <text x="46" y="84" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Modular, regional AI infrastructure designed for</text>
-        <text x="46" y="102" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">speed, resilience, and control.</text>
-        <circle cx="522" cy="64" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.00s" cx="522" cy="64" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="64" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.28s" cx="548" cy="64" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="64" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.56s" cx="574" cy="64" r="3" fill="#9a9db4"/>
+        <rect x="6" y="44" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="70" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="71" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">01</text>
+        <text x="44" y="98" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Facilities</text>
+        <text x="44" y="122" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Modular, regional AI infrastructure designed for speed, resilience, and</text>
+        <text x="44" y="143" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">control.</text>
+        <circle cx="766" cy="96" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.00s" cx="766" cy="96" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="96" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.28s" cx="801" cy="96" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="96" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.56s" cx="836" cy="96" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="132" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="154" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="154" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">02</text>
-        <text x="46" y="178" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Power</text>
-        <text x="46" y="200" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Resilient power strategies built around available,</text>
-        <text x="46" y="218" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">reliable, and long-term operating advantage.</text>
-        <circle cx="522" cy="180" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:0.84s" cx="522" cy="180" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="180" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.12s" cx="548" cy="180" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="180" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.40s" cx="574" cy="180" r="3" fill="#9a9db4"/>
+        <rect x="6" y="161" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="187" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="188" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">02</text>
+        <text x="44" y="215" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Power</text>
+        <text x="44" y="239" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Resilient power strategies built around available, reliable, and long-term</text>
+        <text x="44" y="260" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">operating advantage.</text>
+        <circle cx="766" cy="213" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:0.84s" cx="766" cy="213" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="213" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.12s" cx="801" cy="213" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="213" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.40s" cx="836" cy="213" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="248" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="270" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="270" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">03</text>
-        <text x="46" y="294" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Network</text>
-        <text x="46" y="316" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Private AI fiber fabric for secure, high-bandwidth</text>
-        <text x="46" y="334" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">interconnection across sites.</text>
-        <circle cx="522" cy="296" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.68s" cx="522" cy="296" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="296" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:1.96s" cx="548" cy="296" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="296" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.24s" cx="574" cy="296" r="3" fill="#9a9db4"/>
+        <rect x="6" y="278" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="304" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="305" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">03</text>
+        <text x="44" y="332" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Network</text>
+        <text x="44" y="356" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Private AI fiber fabric for secure, high-bandwidth interconnection across</text>
+        <text x="44" y="377" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">sites.</text>
+        <circle cx="766" cy="330" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.68s" cx="766" cy="330" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="330" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:1.96s" cx="801" cy="330" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="330" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.24s" cx="836" cy="330" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="364" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="386" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="386" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">04</text>
-        <text x="46" y="410" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Compute</text>
-        <text x="46" y="432" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Enterprise-grade GPU, CPU, XPU, storage and</text>
-        <text x="46" y="450" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">networking infrastructure for inference, training,</text>
-        <text x="46" y="468" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">and mission-critical AI operations.</text>
-        <circle cx="522" cy="412" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.52s" cx="522" cy="412" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="412" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:2.80s" cx="548" cy="412" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="412" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.08s" cx="574" cy="412" r="3" fill="#9a9db4"/>
+        <rect x="6" y="395" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="421" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="422" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">04</text>
+        <text x="44" y="449" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Compute</text>
+        <text x="44" y="473" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Enterprise-grade GPU, CPU, XPU, storage and networking infrastructure</text>
+        <text x="44" y="494" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">for inference, training, and mission-critical AI operations.</text>
+        <circle cx="766" cy="447" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.52s" cx="766" cy="447" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="447" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:2.80s" cx="801" cy="447" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="447" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.08s" cx="836" cy="447" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="480" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="502" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="502" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">05</text>
-        <text x="46" y="526" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Control Plane</text>
-        <text x="46" y="548" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Whitehorse&#8482; &#8212; our proprietary sovereign control</text>
-        <text x="46" y="566" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">plane &#8212; orchestrates policy, isolation, governance,</text>
-        <text x="46" y="584" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">and visibility across the platform.</text>
-        <circle cx="522" cy="528" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.36s" cx="522" cy="528" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="528" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.64s" cx="548" cy="528" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="528" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:3.92s" cx="574" cy="528" r="3" fill="#9a9db4"/>
+        <rect x="6" y="512" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="538" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="539" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">05</text>
+        <text x="44" y="566" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Control Plane</text>
+        <text x="44" y="590" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Whitehorse &#8212; our proprietary sovereign control plane &#8212; orchestrates</text>
+        <text x="44" y="611" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">policy, isolation, governance, and visibility across the platform.</text>
+        <circle cx="766" cy="564" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.36s" cx="766" cy="564" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="564" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.64s" cx="801" cy="564" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="564" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:3.92s" cx="836" cy="564" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="596" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="618" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="618" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">06</text>
-        <text x="46" y="642" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Security</text>
-        <text x="46" y="664" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Zero-trust, post-quantum, defense-in-depth</text>
-        <text x="46" y="682" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">architecture embedded throughout the platform.</text>
-        <circle cx="522" cy="644" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.20s" cx="522" cy="644" r="3" fill="#9a9db4"/>
-        <circle cx="548" cy="644" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.48s" cx="548" cy="644" r="3" fill="#9a9db4"/>
-        <circle cx="574" cy="644" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:4.76s" cx="574" cy="644" r="3" fill="#9a9db4"/>
+        <rect x="6" y="629" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="655" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="656" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">06</text>
+        <text x="44" y="683" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Security</text>
+        <text x="44" y="707" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Zero-trust, post-quantum, defense-in-depth architecture embedded</text>
+        <text x="44" y="728" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">throughout the platform.</text>
+        <circle cx="766" cy="681" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.20s" cx="766" cy="681" r="3.4" fill="#9a9db4"/>
+        <circle cx="801" cy="681" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.48s" cx="801" cy="681" r="3.4" fill="#9a9db4"/>
+        <circle cx="836" cy="681" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:4.76s" cx="836" cy="681" r="3.4" fill="#9a9db4"/>
       </g>
       <g>
-        <rect x="16" y="712" width="568" height="102" rx="14" fill="#12111e" stroke="#2c2a3c"/>
-        <rect x="20" y="734" width="3" height="34" rx="1.5" fill="#7c88e6" opacity="0.55"/>
-        <text x="46" y="734" font-family="'Aptos','Archivo',sans-serif" font-size="12" letter-spacing="1.8" fill="#5e5e78">07</text>
-        <text x="46" y="758" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="22" fill="#e9eaf3">Operations</text>
-        <text x="46" y="780" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">Facilities are operated by cleared, physical</text>
-        <text x="46" y="798" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">security teams staffed by former U.S. military</text>
-        <text x="46" y="816" font-family="'Aptos','Archivo',sans-serif" font-size="15" fill="#9a9db4">personnel.</text>
-        <line x1="522" y1="760" x2="574" y2="760" stroke="#7c88e6" stroke-opacity="0.35" stroke-width="1"/>
-        <circle cx="522" cy="760" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.04s" cx="522" cy="760" r="3" fill="#7c88e6"/>
-        <circle cx="548" cy="760" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.32s" cx="548" cy="760" r="3" fill="#7c88e6"/>
-        <circle cx="574" cy="760" r="7" stroke="#2c2a3c"/>
-        <circle class="lnode" style="animation-delay:5.60s" cx="574" cy="760" r="3" fill="#7c88e6"/>
+        <rect x="6" y="746" width="868" height="103" rx="15" fill="#12111e" stroke="#2c2a3c"/>
+        <rect x="10" y="772" width="3" height="52" rx="1.5" fill="#7c88e6" opacity="0.55"/>
+        <text x="44" y="773" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="2" fill="#5e5e78">07</text>
+        <text x="44" y="800" font-family="'Aptos','Archivo',sans-serif" font-weight="600" font-size="24" fill="#e9eaf3">Operations</text>
+        <text x="44" y="824" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">Facilities are operated by cleared, physical security teams staffed by</text>
+        <text x="44" y="845" font-family="'Aptos','Archivo',sans-serif" font-size="18" fill="#9a9db4">former U.S. military personnel.</text>
+        <line x1="766" y1="798" x2="836" y2="798" stroke="#7c88e6" stroke-opacity="0.35" stroke-width="1"/>
+        <circle cx="766" cy="798" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.04s" cx="766" cy="798" r="3.4" fill="#7c88e6"/>
+        <circle cx="801" cy="798" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.32s" cx="801" cy="798" r="3.4" fill="#7c88e6"/>
+        <circle cx="836" cy="798" r="7" stroke="#2c2a3c"/>
+        <circle class="lnode" style="animation-delay:5.60s" cx="836" cy="798" r="3.4" fill="#7c88e6"/>
       </g>
-      <circle class="pkt p1" cx="522" cy="64" r="5" fill="#7c88e6" style="animation-delay:0.0s"/>
-      <circle class="pkt p2" cx="548" cy="64" r="5" fill="#7c88e6" style="animation-delay:2.33s"/>
-      <circle class="pkt p3" cx="574" cy="64" r="5" fill="#7c88e6" style="animation-delay:4.66s"/>
-      <circle class="pkt p2" cx="522" cy="64" r="5" fill="#7c88e6" style="animation-delay:3.5s"/>
-      <text x="300" y="822" text-anchor="middle" font-family="'Aptos','Archivo',sans-serif" font-size="13" letter-spacing="1.6" fill="#5e5e78">CONTROLLED FLOW  ·  PRIVATE NODES</text>
+      <circle class="pkt p1" cx="766" cy="96" r="6" fill="#7c88e6" style="animation-delay:0.0s"/>
+      <circle class="pkt p2" cx="801" cy="96" r="6" fill="#7c88e6" style="animation-delay:2.33s"/>
+      <circle class="pkt p3" cx="836" cy="96" r="6" fill="#7c88e6" style="animation-delay:4.66s"/>
+      <circle class="pkt p2" cx="766" cy="96" r="6" fill="#7c88e6" style="animation-delay:3.5s"/>
+      <text x="440" y="879" text-anchor="middle" font-family="'Aptos','Archivo',sans-serif" font-size="14" letter-spacing="1.8" fill="#5e5e78">CONTROLLED FLOW  ·  PRIVATE NODES</text>
     </svg>
   </div>
 </section>
@@ -719,11 +717,11 @@ footer ul a:hover{color:var(--signal)}
     <div class="reveal d1">
       <p class="lead" style="margin-bottom:16px">Eminence Grey exists because the next era of AI needs a different backbone, one intentionally designed for control, resilience, and accountability in consequential environments.</p>
       <p>We build a sovereign AI operating environment for enterprise, regulated, and public-sector workloads that demand more than generic cloud capacity. Eminence Grey is a distributed AI infrastructure connected by a fully private, quantum-grade encrypted fiber network, kept off the public internet and architected for mission-critical transport.</p>
-      <p style="margin-top:16px">Our model integrates facilities, power, network, security, compute, and operations into one full-stack system, with <strong>Whitehorse</strong> as the control plane that ties that stack together and enforces policy, segmentation, and observability across sites as one sovereign fabric. It remains largely unseen from the outside, but it is the proprietary mechanism that keeps the entire stack behaving as a single, sovereign operating environment.</p>
       <p style="margin-top:16px">Our point of view is straightforward: consequential AI should run on Infrastructure that is intentionally designed for control, resilience, and accountability. That means architecture first, private fabric where required, strong governance, and an operating model that treats infrastructure as a responsibility, not a commodity. Eminence Grey brings together leaders with experience across AI, cybersecurity, infrastructure, operations, legal, public-sector environments, and commercialization, building with an operator’s mindset: practical, disciplined, and focused on what it takes to deploy at scale.</p>
       <div class="hero-cta" style="margin-top:4px"><a class="btn btn--solid" href="#contact">Talk to Eminence Grey <span class="arw">→</span></a></div>
     </div>
     <div class="reveal d2">
+      <p style="margin-bottom:22px">Our model integrates facilities, power, network, security, compute, and operations into one full-stack system, with <strong>Whitehorse</strong> as the control plane that ties that stack together and enforces policy, segmentation, and observability across sites as one sovereign fabric. It remains largely unseen from the outside, but it is the proprietary mechanism that keeps the entire stack behaving as a single, sovereign operating environment.</p>
       <div class="vision-panel">
         <span class="eyebrow" style="color:var(--violet)">Veteran-First</span>
         <p>As a veteran-first organization, Eminence Grey actively recruits former service members, especially those from the U.S. Special Operations community, into meaningful, high-impact roles across our business. By partnering with and integrating into the recruiting pipelines of The Honor Foundation and The Special Forces’ Trust community, among others, Eminence Grey offers veterans clear pathways into roles where operational excellence, strategic thinking, and a team-first mindset directly support our initiatives, and most complex challenges.</p>
@@ -839,7 +837,6 @@ footer ul a:hover{color:var(--signal)}
       <div class="field full"><label for="msg">What are you trying to protect or deploy?</label><textarea id="msg" name="msg"></textarea></div>
       <div class="full" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
         <button class="btn btn--solid" type="submit">Talk to Eminence Grey <span class="arw">→</span></button>
-        <a class="btn" href="#contact">Plan Your Sovereign AI Strategy <span class="arw">→</span></a>
         <span id="formNote" class="idx" style="color:var(--violet)"></span>
       </div>
     </form>
