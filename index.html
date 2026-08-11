@@ -366,19 +366,22 @@ footer ul a:hover{color:var(--signal)}
   font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--ash)}
 .footbar a{color:var(--ash)}.footbar a:hover{color:var(--fog)}
 
-.fdesc-info {
-margin-top: 15px;
+.fdesc-info{
+  margin-top: 15px;
 }
-
-.fdesc-info h4 {
-margin-top: 4px;
-margin-bottom: 0;
+.fdesc-info > div{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
-
-.fdesc-info span {
-display: block;
-font-size: 12px;
-margin-bottom: 10px;
+.fdesc-info h4{    
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.fdesc-info span{
+  font-size:12px;
+  margin-bottom: 0;
 }
 /* ---------- hero sovereign-stack animation ---------- */
 #stackviz{width:100%;height:100%}
@@ -875,7 +878,7 @@ id="wUZa2x9sFJn6eLGwqrGev2" title="Embedded Copper Forms" width="500" height="78
     <div class="ftag">Local · Private · Secure</div>
     <p style="margin-top:16px;font-size:.85rem;max-width:36ch">Sovereign AI Infrastructure-as-a-Service. Deterministic, secure, mission-aligned, and survivable.</p>
     <div class="fdesc-info">
-         <div><h4>Unique Entity ID: </h4><span>TJTAXNLQNC73</span></div> 
+         <div><h4>Unique Entity ID: </h4> <span>TJTAXNLQNC73</span></div> 
          <div><h4>Cage Code:</h4> <span>16A41</span></div>
     </div>
   </div>
